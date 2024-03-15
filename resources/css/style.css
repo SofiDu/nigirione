@@ -90,6 +90,8 @@ body {
   /* Adjust width as needed */
   width: (33.33% - 10px);
   margin-bottom: 20px; /* Add space between items */
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .centered-content {
