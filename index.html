@@ -30,205 +30,206 @@
       <p>Sushi</p>
     </div>
 
-    <div id="menu" class="menu-container"></div>
+    <div class= "body">
+      <div id="menu" class="menu-container"></div>
 
-    <script>
-      // Fetch the JSON file
-      fetch('resources/js/menuTakeAway.json')
-        .then(response => response.json())
-        .then(data => {
-          // Access the menu items and display them
-          const menuDiv = document.getElementById('menu');
-          data.forEach(item => {
-            const menuItem = document.createElement('div');
-            menuItem.classList.add('menu-item'); // Add menu item class
-            menuItem.innerHTML = `
-              <img src="${item.image}" alt="${item.title}">
-              <h4>${item.number}</h4>
-              <h6>${item.title}</h6>
-              <p>${item.price}</p>
-            `;
-            menuDiv.appendChild(menuItem);
-          });
-        })
-        .catch(error => console.error('Error fetching menu data:', error));
-    </script>
-    
-    <div class="strong">
-      <p>Especialidades</p>
-    </div>
-
-    <div id="menu_special" class="menu-container"></div>
-
-    <script>
-      // Fetch the JSON file
-      fetch('resources/js/special.json')
-        .then(response => response.json())
-        .then(data => {
-          // Access the menu items and display them
-          const menuDiv = document.getElementById('menu_special');
-          data.forEach(item => {
-            const menuItem = document.createElement('div');
-            menuItem.classList.add('menu_special-item'); // Add menu item class
-            menuItem.innerHTML = `
-              <img src="${item.image}" alt="${item.title}">
-              <h4>${item.number}</h4>
-              <h6>${item.title}</h6>
-              <p>${item.price}</p>
-            `;
-            menuDiv.appendChild(menuItem);
-          });
-        })
-        .catch(error => console.error('Error fetching menu data:', error));
-    </script>
-
-<div class="strong">
-  <p>Combinados</p>
-</div>
-<div id="menu_special_big" class="menu-container"></div>
-
-    <script>
-      // Fetch the JSON file
-      fetch('resources/js/specialBig.json')
-        .then(response => response.json())
-        .then(data => {
-          // Access the menu items and display them
-          const menuDiv = document.getElementById('menu_special_big');
-          data.forEach(item => {
-            const menuItem = document.createElement('div');
-            menuItem.classList.add('menu_special_big-item'); // Add menu item class
-            menuItem.innerHTML = `
-              <img src="${item.image}" alt="${item.title}">
-              <h4>${item.number}</h4>
-              <h6>${item.title}</h6>
-              <p>${item.price}</p>
-            `;
-            menuDiv.appendChild(menuItem);
-          });
-        })
-        .catch(error => console.error('Error fetching menu data:', error));
-    </script>
-
-<div class="strong">
-  <p>Quentes</p>
-</div>
-<div id="menu_kitchen" class="menu-container"></div>
-
-    <script>
-      // Fetch the JSON file
-      fetch('resources/js/kitchen.json')
-        .then(response => response.json())
-        .then(data => {
-          // Access the menu items and display them
-          const menuDiv = document.getElementById('menu_kitchen');
-          data.forEach(item => {
-            const menuItem = document.createElement('div');
-            menuItem.classList.add('menu_kitchen-item'); // Add menu item class
-            menuItem.innerHTML = `
-              <img src="${item.image}" alt="${item.title}">
-              <h4>${item.number}</h4>
-              <h6>${item.title}</h6>
-              <p>${item.price}</p>
-            `;
-            menuDiv.appendChild(menuItem);
-          });
-        })
-        .catch(error => console.error('Error fetching menu data:', error));
-    </script>
-
-<div class="strong">
-  <p>Massas & Arroz</p>
-</div>
-<div id="menu_noodles" class="menu-container"></div>
-
-    <script>
-      // Fetch the JSON file
-      fetch('resources/js/noodlesRice.json')
-        .then(response => response.json())
-        .then(data => {
-          // Access the menu items and display them
-          const menuDiv = document.getElementById('menu_noodles');
-          data.forEach(item => {
-            const menuItem = document.createElement('div');
-            menuItem.classList.add('menu_noodles-item'); // Add menu item class
-            menuItem.innerHTML = `
-              <img src="${item.image}" alt="${item.title}">
-              <h4>${item.number}</h4>
-              <h6>${item.title}</h6>
-              <p>${item.price}</p>
-            `;
-            menuDiv.appendChild(menuItem);
-          });
-        })
-        .catch(error => console.error('Error fetching menu data:', error));
-    </script>
-
-
-  <div class="strong">
-    <p>Acompanhamentos</p>
-  </div>
-  <div id="menu_side" class="menu-container"></div>
-
-    <script>
-      // Fetch the JSON file
-      fetch('resources/js/sideDish.json')
-        .then(response => response.json())
-        .then(data => {
-          // Access the menu items and display them
-          const menuDiv = document.getElementById('menu_side');
-          data.forEach(item => {
-            const menuItem = document.createElement('div');
-            menuItem.classList.add('menu_side-item'); // Add menu item class
-            menuItem.innerHTML = `
-              <img src="${item.image}" alt="${item.title}">
-              <h4>${item.number}</h4>
-              <h6>${item.title}</h6>
-              <p>${item.price}</p>
-            `;
-            menuDiv.appendChild(menuItem);
-          });
-        })
-        .catch(error => console.error('Error fetching menu data:', error));
-    </script>
-
-
-  <div class="strong">
-    <p>Sobremesas</p>
-  </div>
-  <div id="menu_dessert" class="menu-container"></div>
-
-    <script>
-      // Fetch the JSON file
-      fetch('resources/js/dessert.json')
-        .then(response => response.json())
-        .then(data => {
-          // Access the menu items and display them
-          const menuDiv = document.getElementById('menu_dessert');
-          data.forEach(item => {
-            const menuItem = document.createElement('div');
-            menuItem.classList.add('menu_dessert-item'); // Add menu item class
-            menuItem.innerHTML = `
-              <img src="${item.image}" alt="${item.title}">
-              <h4>${item.number}</h4>
-              <h6>${item.title}</h6>
-              <p>${item.price}</p>
-            `;
-            menuDiv.appendChild(menuItem);
-          });
-        })
-        .catch(error => console.error('Error fetching menu data:', error));
-    </script>
-
-
-    <div class="centered-content">
-      <div class="logo-white">
-          <img src="resources/img/logo_white.png" alt="NIGIRI-ONE RESTAURANTE JAPONÊS">
+      <script>
+        // Fetch the JSON file
+        fetch('resources/js/menuTakeAway.json')
+          .then(response => response.json())
+          .then(data => {
+            // Access the menu items and display them
+            const menuDiv = document.getElementById('menu');
+            data.forEach(item => {
+              const menuItem = document.createElement('div');
+              menuItem.classList.add('menu-item'); // Add menu item class
+              menuItem.innerHTML = `
+                <img src="${item.image}" alt="${item.title}">
+                <h4>${item.number}</h4>
+                <h6>${item.title}</h6>
+                <p>${item.price}</p>
+              `;
+              menuDiv.appendChild(menuItem);
+            });
+          })
+          .catch(error => console.error('Error fetching menu data:', error));
+      </script>
+      
+      <div class="strong">
+        <p>Especialidades</p>
       </div>
-      <p class="address">Rua Marquês de Pombal 23/25 Tomar</p>
-      <p class="opening-hours">Horário de Funcionamento:</p>
-      <p class="time">Almoço: 12:00 - 15:00</p>
-      <p class="time">Jantar: 19:00 - 23:00</p>
-    </div>
 
+      <div id="menu_special" class="menu-container"></div>
+
+      <script>
+        // Fetch the JSON file
+        fetch('resources/js/special.json')
+          .then(response => response.json())
+          .then(data => {
+            // Access the menu items and display them
+            const menuDiv = document.getElementById('menu_special');
+            data.forEach(item => {
+              const menuItem = document.createElement('div');
+              menuItem.classList.add('menu_special-item'); // Add menu item class
+              menuItem.innerHTML = `
+                <img src="${item.image}" alt="${item.title}">
+                <h4>${item.number}</h4>
+                <h6>${item.title}</h6>
+                <p>${item.price}</p>
+              `;
+              menuDiv.appendChild(menuItem);
+            });
+          })
+          .catch(error => console.error('Error fetching menu data:', error));
+      </script>
+
+  <div class="strong">
+    <p>Combinados</p>
+  </div>
+  <div id="menu_special_big" class="menu-container"></div>
+
+      <script>
+        // Fetch the JSON file
+        fetch('resources/js/specialBig.json')
+          .then(response => response.json())
+          .then(data => {
+            // Access the menu items and display them
+            const menuDiv = document.getElementById('menu_special_big');
+            data.forEach(item => {
+              const menuItem = document.createElement('div');
+              menuItem.classList.add('menu_special_big-item'); // Add menu item class
+              menuItem.innerHTML = `
+                <img src="${item.image}" alt="${item.title}">
+                <h4>${item.number}</h4>
+                <h6>${item.title}</h6>
+                <p>${item.price}</p>
+              `;
+              menuDiv.appendChild(menuItem);
+            });
+          })
+          .catch(error => console.error('Error fetching menu data:', error));
+      </script>
+
+  <div class="strong">
+    <p>Quentes</p>
+  </div>
+  <div id="menu_kitchen" class="menu-container"></div>
+
+      <script>
+        // Fetch the JSON file
+        fetch('resources/js/kitchen.json')
+          .then(response => response.json())
+          .then(data => {
+            // Access the menu items and display them
+            const menuDiv = document.getElementById('menu_kitchen');
+            data.forEach(item => {
+              const menuItem = document.createElement('div');
+              menuItem.classList.add('menu_kitchen-item'); // Add menu item class
+              menuItem.innerHTML = `
+                <img src="${item.image}" alt="${item.title}">
+                <h4>${item.number}</h4>
+                <h6>${item.title}</h6>
+                <p>${item.price}</p>
+              `;
+              menuDiv.appendChild(menuItem);
+            });
+          })
+          .catch(error => console.error('Error fetching menu data:', error));
+      </script>
+
+  <div class="strong">
+    <p>Massas & Arroz</p>
+  </div>
+  <div id="menu_noodles" class="menu-container"></div>
+
+      <script>
+        // Fetch the JSON file
+        fetch('resources/js/noodlesRice.json')
+          .then(response => response.json())
+          .then(data => {
+            // Access the menu items and display them
+            const menuDiv = document.getElementById('menu_noodles');
+            data.forEach(item => {
+              const menuItem = document.createElement('div');
+              menuItem.classList.add('menu_noodles-item'); // Add menu item class
+              menuItem.innerHTML = `
+                <img src="${item.image}" alt="${item.title}">
+                <h4>${item.number}</h4>
+                <h6>${item.title}</h6>
+                <p>${item.price}</p>
+              `;
+              menuDiv.appendChild(menuItem);
+            });
+          })
+          .catch(error => console.error('Error fetching menu data:', error));
+      </script>
+
+
+    <div class="strong">
+      <p>Acompanhamentos</p>
+    </div>
+    <div id="menu_side" class="menu-container"></div>
+
+      <script>
+        // Fetch the JSON file
+        fetch('resources/js/sideDish.json')
+          .then(response => response.json())
+          .then(data => {
+            // Access the menu items and display them
+            const menuDiv = document.getElementById('menu_side');
+            data.forEach(item => {
+              const menuItem = document.createElement('div');
+              menuItem.classList.add('menu_side-item'); // Add menu item class
+              menuItem.innerHTML = `
+                <img src="${item.image}" alt="${item.title}">
+                <h4>${item.number}</h4>
+                <h6>${item.title}</h6>
+                <p>${item.price}</p>
+              `;
+              menuDiv.appendChild(menuItem);
+            });
+          })
+          .catch(error => console.error('Error fetching menu data:', error));
+      </script>
+
+
+    <div class="strong">
+      <p>Sobremesas</p>
+    </div>
+    <div id="menu_dessert" class="menu-container"></div>
+
+      <script>
+        // Fetch the JSON file
+        fetch('resources/js/dessert.json')
+          .then(response => response.json())
+          .then(data => {
+            // Access the menu items and display them
+            const menuDiv = document.getElementById('menu_dessert');
+            data.forEach(item => {
+              const menuItem = document.createElement('div');
+              menuItem.classList.add('menu_dessert-item'); // Add menu item class
+              menuItem.innerHTML = `
+                <img src="${item.image}" alt="${item.title}">
+                <h4>${item.number}</h4>
+                <h6>${item.title}</h6>
+                <p>${item.price}</p>
+              `;
+              menuDiv.appendChild(menuItem);
+            });
+          })
+          .catch(error => console.error('Error fetching menu data:', error));
+      </script>
+
+
+      <div class="centered-content">
+        <div class="logo-white">
+            <img src="resources/img/logo_white.png" alt="NIGIRI-ONE RESTAURANTE JAPONÊS">
+        </div>
+        <p class="address">Rua Marquês de Pombal 23/25 Tomar</p>
+        <p class="opening-hours">Horário de Funcionamento:</p>
+        <p class="time">Almoço: 12:00 - 15:00</p>
+        <p class="time">Jantar: 19:00 - 23:00</p>
+      </div>
+    </div>
 </body>
 </html>

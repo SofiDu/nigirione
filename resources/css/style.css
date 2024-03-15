@@ -5,10 +5,12 @@
   list-style: none;
   text-decoration: none;
   color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:sans-serif;
 }
 
-
+body {
+  padding: 20px;
+}
 
 .alt-text {
   color: #f9f8f8; /* Choose your desired color using hex, RGB, or color name */
