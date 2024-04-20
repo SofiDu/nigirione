@@ -82,7 +82,23 @@ body {
 .menu-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust as needed */
-  grid-gap: 20px; /* Adjust the gap between items */
+  grid-gap: 20px; 
+}
+
+.menu_special-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust as needed */
+  grid-gap: 30px; /* 2 items */
+}
+
+.dishes_special-item img{
+  width: 120px;
+  height: 100px;
+}
+
+.dishes_special-item{
+  text-align: center;
+  padding: 5px;
 }
 
 .dishes-item{
@@ -126,20 +142,17 @@ body {
     text-align: center;
     margin-left:10px;
     margin-right: 10px;
+    padding: 5px;
 
   }
   .dishes-item img{
-    width: 90px;
+    width: 100px;
+    height: 80px;
   }
 
-  dishes_special-item{
+  .dishes_special-item{
     text-align: center;
-    margin-left:50px;
-    margin-right: 50px;
-  }
-
-  dishes_special-item img{
-    width: 150px;
+    padding: 5px;
   }
 
   .strong {
@@ -177,9 +190,8 @@ body {
   .menu_special-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust as needed */
-    grid-gap: 20px; /* 2 items */
+    grid-gap: 100px; /* 2 items */
   }
-
 
   .address, .opening-hours, .time {
     font-size: 1.2em;
