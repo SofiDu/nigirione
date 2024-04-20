@@ -86,7 +86,7 @@
   <div class="strong">
     <p>Combinados</p>
   </div>
-  <div id="menu_special_big" class="menu-container"></div>
+  <div id="menu_special_big" class="menu_special-container"></div>
 
       <script>
         // Fetch the JSON file
@@ -97,7 +97,7 @@
             const menuDiv = document.getElementById('menu_special_big');
             data.forEach(item => {
               const menuItem = document.createElement('div');
-              menuItem.classList.add('dishes-item'); // Add menu item class
+              menuItem.classList.add('dishes_special-item'); // Add menu item class
               menuItem.innerHTML = `
                 <img src="${item.image}" alt="${item.title}">
                 <h4>${item.number}</h4>

@@ -122,9 +122,26 @@ body {
 @media screen and (max-width: 768px) {
   
 
-  .menu-item {
-    width: 30%; /* Display items in a single column on small screens */
+  .dishes-item {
+    text-align: center;
+    margin-left:10px;
+    margin-right: 10px;
+
   }
+  .dishes-item img{
+    width: 90px;
+  }
+
+  dishes_special-item{
+    text-align: center;
+    margin-left:50px;
+    margin-right: 50px;
+  }
+
+  dishes_special-item img{
+    width: 150px;
+  }
+
   .strong {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -154,8 +171,15 @@ body {
   .menu-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust as needed */
-    grid-gap: 15px; /* Adjust the gap between items */
+    grid-gap: 15px; /* 3 items */
   }
+
+  .menu_special-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust as needed */
+    grid-gap: 20px; /* 2 items */
+  }
+
 
   .address, .opening-hours, .time {
     font-size: 1.2em;
