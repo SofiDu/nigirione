@@ -83,12 +83,14 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust as needed */
   grid-gap: 20px; 
+  padding: 5px;
 }
 
 .menu_special-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust as needed */
   grid-gap: 30px; /* 2 items */
+  padding: 5px;
 }
 
 .dishes_special-item img{
@@ -146,7 +148,7 @@ body {
 
   }
   .dishes-item img{
-    width: 100px;
+    width: 90px;
     height: 80px;
   }
 
