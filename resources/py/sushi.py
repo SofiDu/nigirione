@@ -41,7 +41,7 @@ menu_items = [
     {"number": "A30" ,"title": "Califórnia Frango Panado", "price": NORMALBOX, "image": "resources/img/sushi/a30.png"},
     {"number": "A31" ,"title": "Califórnia Maki Frito", "price": NORMALBOX, "image": "resources/img/sushi/a31.png"},
     {"number": "A32" ,"title": "Temaki", "price": NORMALBOX, "image": "resources/img/sushi/a32.png"},
-    {"number": "A33" ,"title": "Queiho Creme", "price": NORMALBOX, "image": "resources/img/sushi/a33.png"}
+    {"number": "A33" ,"title": "Queijo Creme", "price": NORMALBOX, "image": "resources/img/sushi/a33.png"}
 ]
 
 file_path = "resources/js/sushi.json"
