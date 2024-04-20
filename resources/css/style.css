@@ -85,13 +85,8 @@ body {
   grid-gap: 20px; /* Adjust the gap between items */
 }
 
-.menu-item {
-  /*width: 10%; */
-  /* Adjust width as needed */
-  width: (33.33% - 10px);
-  margin-bottom: 20px; /* Add space between items */
-  margin-left: 10px;
-  margin-right: 10px;
+.dishes-item{
+  text-align: center;
 }
 
 .centered-content {
@@ -159,9 +154,8 @@ body {
   .menu-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust as needed */
-    grid-gap: 20px; /* Adjust the gap between items */
+    grid-gap: 15px; /* Adjust the gap between items */
   }
-
 
   .address, .opening-hours, .time {
     font-size: 1.2em;
